@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Save Our Wildlife</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="container" role="main">
+
+    <!-- Heading -->
+    <h1 class="page-title">Save Our Wildlife</h1>
+
+    <!-- Video Section -->
+    <section class="video-section" aria-label="Wildlife promotional video">
+      <video
+        id="wildlifeVideo"
+        class="video-player"
+        controls
+        aria-label="Wildlife conservation video"
+      >
+        <source src="wildlife.mp4" type="video/mp4" />
+        <p>Your browser does not support HTML5 video. 
+           <a href="wildlife.mp4">Download the video</a> instead.</p>
+      </video>
+
+      <!-- Description -->
+      <p class="video-description">
+        Join us in protecting Earth's most vulnerable species. Every action counts —
+        together, we can preserve our planet's extraordinary wildlife for generations to come.
+      </p>
+
+      <!-- Toggle Button -->
+      <button
+        id="toggleBtn"
+        class="toggle-btn"
+        aria-controls="wildlifeVideo"
+        aria-label="Hide video"
+        onclick="toggleVideo()"
+      >
+        Hide Video
+      </button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
